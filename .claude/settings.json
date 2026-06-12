@@ -1,0 +1,35 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "h5i hook run",
+            "type": "command"
+          }
+        ],
+        "matcher": "Edit|Write|Read"
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "h5i hook session-start",
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "h5i hook stop",
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  }
+}
